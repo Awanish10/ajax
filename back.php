@@ -1,6 +1,5 @@
 <?php 
-//mysql -h13.232.43.166 --port=3310 -udevelopment -pAllenginger354 -A
-$conn = mysqli_connect('13.232.43.166:3310','development','Allenginger354','kotanew21');
+
 if (!$conn ) {
    echo "Not connect databases";
 }
