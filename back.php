@@ -13,14 +13,14 @@ if ($post == 'view') {
     while($row=mysqli_fetch_assoc($sql)){
         $student[] = $row;
     }
-    echo json_encode( $student);
-
+    echo json_encode( $student); // array object  to json in php
+ 
 }elseif($post == 'edit'){
     
     $id = $_POST['id'];
     $sql = mysqli_query($conn, "SELECT * FROM STUDENT WHERE STUDENT_ID=$id");
    $row=mysqli_fetch_assoc($sql);
-    echo json_encode($row);
+    echo json_encode($row); // array object  to json in php
     
 
 }elseif($post == 'update'){

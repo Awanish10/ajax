@@ -66,7 +66,7 @@
                 },
                 success: function(result) {
 
-                    data = JSON.parse(result);
+                    data = JSON.parse(result); //json to array object in javascript
                     table = ` <table class="table table-success table-striped">
                         <tr class="table-primary">
                         <td class="table-primary">STUDENT_ID</td>
@@ -110,7 +110,7 @@
                     "id": id
                 },
                 success: function(result) {
-                    data = JSON.parse(result);
+                    data = JSON.parse(result); //json to array object in javascript
                     $('#STUDENT_NAME').val(data.STUDENT_NAME);
                     $('#ENROLLMENT_NO').val(data.ENROLLMENT_NO);
                     if (data.GENDER == 'Male') {
