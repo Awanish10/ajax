@@ -157,7 +157,8 @@
                     "student": Studentdata
                 },
                 success: function(result) {
-                    data = JSON.parse(result);
+                    data = JSON.parse(result); // create json to array or object  JSON.parse
+                    // JSON.stringify() javascript make json
                     alert(data.msg);
                     viewFunction();
 

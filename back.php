@@ -9,6 +9,7 @@ $post = $_POST['name'];
 if ($post == 'view') {
     $sql = mysqli_query($conn, "SELECT * FROM STUDENT LIMIT 10");
     $student = array();
+
     while($row=mysqli_fetch_assoc($sql)){
         $student[] = $row;
     }
@@ -52,7 +53,9 @@ if ($post == 'view') {
     } else {
         $arr = array("msg"=>"data not updated");
     }
-    echo json_encode($arr);
+    echo json_encode($arr); //make json 
+
+    // create json to array or object  json_decode
 
 }else{
 
