@@ -1,4 +1,6 @@
 <?php 
+$conn = mysqli_connect("localhost","root","12345678","eduction");
+
 
 if (!$conn ) {
    echo "Not connect databases";
